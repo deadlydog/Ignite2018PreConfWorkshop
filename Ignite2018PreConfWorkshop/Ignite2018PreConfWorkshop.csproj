@@ -3,10 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <ApplicationInsightsResourceId>/subscriptions/42f8591c-9fd1-47ac-95bb-7c32858bf1cd/resourcegroups/Ignite2018PreConf/providers/microsoft.insights/components/Ignite2018PreConfWorkshop</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/42f8591c-9fd1-47ac-95bb-7c32858bf1cd/resourcegroups/Ignite2018PreConf/providers/microsoft.insights/components/Ignite2018PreConfWorkshop</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
