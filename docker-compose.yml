@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ignite2018preconfworkshop:
+    image: ${DOCKER_REGISTRY}ignite2018preconfworkshop
+    build:
+      context: .
+      dockerfile: Ignite2018PreConfWorkshop/Dockerfile
